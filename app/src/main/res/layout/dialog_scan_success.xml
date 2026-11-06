@@ -1,0 +1,156 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- SUCCESS ICON -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="#4B8B57"
+            android:gravity="center" />
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan Successful!"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#28572D"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your eco action has been verified."
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- CLASSIFICATION RESULT CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EDF5E9"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Material Detected"
+                android:textSize="13sp"
+                android:textColor="#456B47" />
+
+            <TextView
+                android:id="@+id/tvDetectedMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plastic Bottle"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#28572D"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tvConfidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confidence: 96%"
+                android:textSize="13sp"
+                android:textColor="#456B47"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C8D9C2"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eco Points Earned"
+                android:textSize="13sp"
+                android:textColor="#456B47" />
+
+            <TextView
+                android:id="@+id/tvPointsEarned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+50 EP"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#28572D"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tvMultiplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Streak bonus: Not active"
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <!-- ECO FACT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F7F9F4"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌱 Did You Know?"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#28572D" />
+
+            <TextView
+                android:id="@+id/tvEcoFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recycling plastic helps reduce waste and supports a circular economy."
+                android:textSize="13sp"
+                android:textColor="#456B47"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- CONTINUE BUTTON -->
+        <Button
+            android:id="@+id/btnScanContinue"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#87A679"
+            android:layout_marginTop="22dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BFEBAD">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#87A679"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:contentDescription="Go back"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌱 UM Ecoverse"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Actions, Big Impact"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ECO POINTS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR ECO POINTS"
+                    android:textColor="#456B47"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvEcoPoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="850 EP"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keep taking eco-friendly actions!"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- STREAK AND ECO SCORE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginBottom="14dp">
+
+                <!-- RECYCLING STREAK -->
+                <LinearLayout
+                    android:id="@+id/cardStreak"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/eco_card"
+                    android:padding="14dp"
+                    android:layout_marginEnd="7dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 Recycling Streak"
+                        android:textSize="13sp"
+                        android:textColor="#456B47" />
+
+                    <TextView
+                        android:id="@+id/tvStreak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3 Days"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#28572D"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 more days for 1.5× EP!"
+                        android:textSize="11sp"
+                        android:textColor="#777777"
+                        android:layout_marginTop="5dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressStreak"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:max="5"
+                        android:progress="3"
+                        android:progressTint="#87A679"
+                        android:progressBackgroundTint="#E4EDE0"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to view progress ›"
+                        android:textSize="10sp"
+                        android:textColor="#456B47"
+                        android:layout_marginTop="6dp" />
+
+                </LinearLayout>
+
+                <!-- ECO SCORE -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/eco_card"
+                    android:padding="14dp"
+                    android:layout_marginStart="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🌿 Eco Score"
+                        android:textSize="13sp"
+                        android:textColor="#456B47" />
+
+                    <TextView
+                        android:id="@+id/tvEcoScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="72/100"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#28572D"
+                        android:layout_marginTop="8dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressEcoScore"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:max="100"
+                        android:progress="72"
+                        android:progressTint="#87A679"
+                        android:progressBackgroundTint="#E4EDE0"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- TODAY'S CHALLENGE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="♻️ Today's Eco Challenge"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycle a plastic bottle and earn +50 EP"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnStartScan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Start Eco Scan"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679" />
+            </LinearLayout>
+
+            <!-- COLLEGE BATTLE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 College Battle"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explore college rankings and sustainability challenges."
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnCollegeBattle"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="View Leaderboard"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <!-- CARBON SAVED -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌍 Carbon Saved"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12.5 kg CO₂"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated CO₂ avoided this month"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- KNOWLEDGE HUB -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📚 SDG Knowledge Hub"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Learn about sustainability and earn knowledge badges."
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnKnowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Explore Knowledge Hub"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#87A679">
+
+        <TextView
+            android:id="@+id/navHome"
+            style="@style/EcoBottomNav"
+            android:text="⌂&#10;Home" />
+
+        <TextView
+            android:id="@+id/navRanks"
+            style="@style/EcoBottomNav"
+            android:text="★&#10;Ranks" />
+
+        <TextView
+            android:id="@+id/navScan"
+            style="@style/EcoBottomNav"
+            android:text="▣&#10;Scan" />
+
+        <TextView
+            android:id="@+id/navRewards"
+            style="@style/EcoBottomNav"
+            android:text="♛&#10;Rewards" />
+
+        <TextView
+            android:id="@+id/navProfile"
+            style="@style/EcoBottomNav"
+            android:text="♙&#10;Profile" />
+
+    </LinearLayout>
+
+</LinearLayout>
