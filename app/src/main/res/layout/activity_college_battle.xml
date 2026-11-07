@@ -1,0 +1,309 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEBAD"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#87A679"
+            android:padding="22dp">
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:contentDescription="Go back"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏆 College Battle"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which college is leading the green movement?"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- MAIN CONTENT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TOTAL CARBON SAVED -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Carbon Saved"
+                    android:textColor="#456B47"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalCarbon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="248.5 kg CO₂"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Combined savings from participating colleges"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- COLLEGE MAP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College Battle Map"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCollegeMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#EDF5E9"
+                    android:layout_marginTop="14dp"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@android:drawable/ic_dialog_map"
+                        android:contentDescription="Map placeholder" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UM Residential Colleges"
+                        android:textColor="#28572D"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Interactive map integration coming later"
+                        android:textColor="#777777"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewCollegeMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="View College Map"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="14dp" />
+            </LinearLayout>
+
+            <!-- LEADERBOARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College Leaderboard"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Rankings"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- RANK 1 -->
+                <TextView
+                    android:id="@+id/tvRank1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🥇 KK12     4,200 EP"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressRank1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressTint="#87A679"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonRank1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="92.5 kg CO₂ saved"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="18dp" />
+
+                <!-- RANK 2 -->
+                <TextView
+                    android:id="@+id/tvRank2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🥈 KK1     3,650 EP"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressRank2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:max="100"
+                    android:progress="87"
+                    android:progressTint="#87A679"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonRank2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="81.0 kg CO₂ saved"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="18dp" />
+
+                <!-- RANK 3 -->
+                <TextView
+                    android:id="@+id/tvRank3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🥉 KK8     2,900 EP"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressRank3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:max="100"
+                    android:progress="69"
+                    android:progressTint="#87A679"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonRank3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75.0 kg CO₂ saved"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- ECO AMBASSADOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eco-Ambassador Challenge"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create college-specific challenges and inspire your community to take action."
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/btnCreateChallenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Create Challenge"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

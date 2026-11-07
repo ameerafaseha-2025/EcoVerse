@@ -1,0 +1,297 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEBAD"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#87A679"
+            android:padding="22dp">
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:contentDescription="Go back"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Eco Profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track your green journey at UM"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- CONTENT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- USER DETAILS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/eco_card"
+                android:padding="20dp"
+                android:layout_marginBottom="14dp">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    android:contentDescription="Profile picture" />
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UM Student"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textColor="#28572D"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="student@siswa.um.edu.my"
+                    android:textSize="13sp"
+                    android:textColor="#777777"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/tvProfileLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌱 Eco Explorer"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <!-- POINTS AND STREAK -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/eco_card"
+                    android:padding="16dp"
+                    android:layout_marginEnd="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Eco Points"
+                        android:textColor="#456B47"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvProfilePoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="850 EP"
+                        android:textColor="#28572D"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/eco_card"
+                    android:padding="16dp"
+                    android:layout_marginStart="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Current Streak"
+                        android:textColor="#456B47"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvProfileStreak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 3 Days"
+                        android:textColor="#28572D"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- CARBON DASHBOARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Carbon Dashboard"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated CO₂ savings from your eco actions"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:id="@+id/tvPersonalCarbon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12.5 kg CO₂"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:layout_marginTop="14dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Goal: 20 kg CO₂"
+                    android:textColor="#456B47"
+                    android:textSize="13sp"
+                    android:layout_marginTop="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressCarbonGoal"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:max="100"
+                    android:progress="63"
+                    android:progressTint="#87A679"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/tvCarbonPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="62.5% of monthly goal"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:layout_marginTop="7dp" />
+            </LinearLayout>
+
+            <!-- BADGES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Achievements"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileBadges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌱 Eco Beginner&#10;♻️ Recycling Hero&#10;🏆 Sprint Champion (Locked)"
+                    android:textColor="#456B47"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_marginTop="14dp" />
+            </LinearLayout>
+
+            <!-- COLLEGE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Residential College"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileCollege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KK12"
+                    android:textColor="#456B47"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/tvProfileCollegeRank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College ranking: #1"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
