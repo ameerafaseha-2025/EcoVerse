@@ -47,10 +47,6 @@ public class KnowledgeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge);
-        findViewById(R.id.btnBack).setOnClickListener(v -> {
-            getOnBackPressedDispatcher().onBackPressed();
-        });
-
         tvQuizStatus = findViewById(R.id.tvQuizStatus);
         tvKnowledgeBadge = findViewById(R.id.tvKnowledgeBadge);
         tvChallengeAccess = findViewById(R.id.tvChallengeAccess);

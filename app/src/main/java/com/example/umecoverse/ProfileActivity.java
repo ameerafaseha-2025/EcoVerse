@@ -35,10 +35,6 @@ public class ProfileActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        // Back button
-        findViewById(R.id.btnBack).setOnClickListener(v ->
-                getOnBackPressedDispatcher().onBackPressed()
-        );
 
         // Connect XML components
         tvProfileName = findViewById(R.id.tvProfileName);

@@ -14,10 +14,6 @@ public class CollegeBattleActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_college_battle);
 
-        // Back Button
-        findViewById(R.id.btnBack).setOnClickListener(v -> {
-            getOnBackPressedDispatcher().onBackPressed();
-        });
 
         // View College Map
         findViewById(R.id.btnViewCollegeMap).setOnClickListener(v -> {

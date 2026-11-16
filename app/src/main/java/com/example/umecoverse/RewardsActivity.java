@@ -13,9 +13,6 @@ public class RewardsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rewards);
-        findViewById(R.id.btnBack).setOnClickListener(v -> {
-            getOnBackPressedDispatcher().onBackPressed();
-        });
 
         findViewById(R.id.btnRedeemCafe).setOnClickListener(v -> {
             showRedeemDialog("RM5 Cafe Voucher", 500);
