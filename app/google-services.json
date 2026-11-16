@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374174573340",
+    "project_id": "ecoverse-20a75",
+    "storage_bucket": "ecoverse-20a75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374174573340:android:a9ead2e94261e25b0090d9",
+        "android_client_info": {
+          "package_name": "com.example.umecoverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTIZ-P5dlcuCDQ1Wd2Ta8HKZhauouZQqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
