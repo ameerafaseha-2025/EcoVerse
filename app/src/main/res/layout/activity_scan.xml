@@ -1,0 +1,146 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BFEBAD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#87A679"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="♻️ AI Eco Scan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snap, scan and earn Eco Points!"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Your Eco Action"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/imgPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#EDF5E9"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Selected image preview" />
+
+                <TextView
+                    android:id="@+id/tvImageStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No photo selected"
+                    android:textColor="#777777"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/btnChoosePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Choose Photo"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Supported Materials"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plastic • Paper • Metal • Glass"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:layout_marginTop="7dp" />
+
+                <Button
+                    android:id="@+id/btnScanVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Scan &amp; Verify"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#456B47"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How It Works"
+                    android:textColor="#28572D"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Upload a clear photo&#10;2. AI identifies the material&#10;3. Anti-cheat checks your submission&#10;4. Earn points and learn an eco-fact"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="7dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

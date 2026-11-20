@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#C4EEB5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <!-- APP LOGO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌱"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- APP NAME -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UM Ecoverse"
+            android:textColor="#24543C"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:gravity="center" />
+
+        <!-- APP TAGLINE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Actions, Big Impact"
+            android:textColor="#3E7154"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- SIGN UP CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Your Account"
+                android:textColor="#24543C"
+                android:textStyle="bold"
+                android:textSize="23sp" />
+
+            <!-- SUBTITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join our green community at Universiti Malaya!"
+                android:textColor="#7A857C"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- FULL NAME -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="#315C43"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etSignUpName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter your full name"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:backgroundTint="#9DBA9D" />
+
+            <!-- UM EMAIL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UM Email"
+                android:textColor="#315C43"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etSignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="student@siswa.um.edu.my"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:backgroundTint="#9DBA9D" />
+
+            <!-- PASSWORD -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#315C43"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Create a password"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:backgroundTint="#9DBA9D" />
+
+            <!-- CONFIRM PASSWORD -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textColor="#315C43"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Re-enter your password"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:backgroundTint="#9DBA9D" />
+
+            <!-- CREATE ACCOUNT BUTTON -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="28dp"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#8BAA80" />
+
+            <!-- BACK TO LOGIN -->
+            <TextView
+                android:id="@+id/tvBackToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? Sign In"
+                android:textColor="#315C43"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Universiti Malaya Students"
+            android:textColor="#5E8264"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

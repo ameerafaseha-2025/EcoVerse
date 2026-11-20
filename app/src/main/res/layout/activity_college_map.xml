@@ -1,0 +1,121 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEBAD"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗺️ College Battle Map"
+            android:textColor="#28572D"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore residential college sustainability rankings"
+            android:textColor="#456B47"
+            android:textSize="14sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- MAP PROTOTYPE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/eco_card"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="🌳 UM COLLEGE BATTLE MAP"
+                android:textStyle="bold"
+                android:textColor="#28572D"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="📍 KK12 — 4,200 EP"
+                android:textColor="#28572D"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="📍 KK1 — 3,650 EP"
+                android:textColor="#456B47"
+                android:textSize="16sp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="📍 KK8 — 2,900 EP"
+                android:textColor="#456B47"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- MAP INFORMATION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/eco_card"
+            android:padding="18dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏆 Current Leader"
+                android:textStyle="bold"
+                android:textColor="#28572D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KK12 — 4,200 Eco Points"
+                android:textColor="#456B47"
+                android:textSize="15sp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total College Carbon Savings: 248.5 kg CO₂"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo data — live rankings will be integrated later."
+                android:textColor="#777777"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

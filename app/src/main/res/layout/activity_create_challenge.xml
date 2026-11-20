@@ -1,0 +1,130 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFEBAD"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#87A679"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌱 Create Eco Challenge"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eco-Ambassador Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/eco_card"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challenge Title"
+                    android:textStyle="bold"
+                    android:textColor="#28572D"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/etChallengeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. Plastic-Free Week"
+                    android:inputType="textCapSentences"
+                    android:layout_marginBottom="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textColor="#28572D"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/etChallengeDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Describe your eco challenge..."
+                    android:gravity="top"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:layout_marginBottom="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Target Actions"
+                    android:textStyle="bold"
+                    android:textColor="#28572D"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/etChallengeTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. 50"
+                    android:inputType="number"
+                    android:layout_marginBottom="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deadline"
+                    android:textStyle="bold"
+                    android:textColor="#28572D"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnSelectDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Select Deadline"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnSubmitChallenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Create Challenge"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#28572D"
+                    android:layout_marginTop="24dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

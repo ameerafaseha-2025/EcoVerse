@@ -1,0 +1,89 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvErrorIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#B36B22"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvErrorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blurry Image"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#28572D"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvErrorSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We couldn't get a clear view of your item."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF6E9"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make sure your item is well-lit and in focus before trying again."
+                android:textSize="13sp"
+                android:textColor="#805C30"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRetryScan"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Retake Photo"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#87A679"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:id="@+id/tvNoPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Eco Points awarded"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>
