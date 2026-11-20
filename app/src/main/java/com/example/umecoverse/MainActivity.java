@@ -38,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);
+
+        tvForgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    ResetPasswordActivity.class
+            );
+            startActivity(intent);
+        });
+
+
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
