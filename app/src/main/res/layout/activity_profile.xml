@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -264,20 +265,37 @@
                     android:id="@+id/tvProfileCollege"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="KK12"
+                    android:text="Not set"
                     android:textColor="#456B47"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:layout_marginTop="12dp" />
 
+                <Spinner
+                    android:id="@+id/spinnerCollege"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/eco_card"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btnSaveCollege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save College"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#87A679"
+                    android:layout_marginTop="10dp" />
+
                 <TextView
                     android:id="@+id/tvProfileCollegeRank"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="College ranking: #1"
+                    android:text="College ranking: Not available"
                     android:textColor="#777777"
                     android:textSize="13sp"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="12dp" />
             </LinearLayout>
 
         </LinearLayout>
