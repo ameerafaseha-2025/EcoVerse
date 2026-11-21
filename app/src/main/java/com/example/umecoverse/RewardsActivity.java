@@ -37,6 +37,7 @@ public class RewardsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rewards);
+        BottomNavHelper.setup(this);
 
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();

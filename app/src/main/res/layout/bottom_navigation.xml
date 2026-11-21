@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#87A679">
+
+    <TextView
+        android:id="@+id/navHome"
+        style="@style/EcoBottomNav"
+        android:text="⌂&#10;Home" />
+
+    <TextView
+        android:id="@+id/navRanks"
+        style="@style/EcoBottomNav"
+        android:text="★&#10;Ranks" />
+
+    <TextView
+        android:id="@+id/navScan"
+        style="@style/EcoBottomNav"
+        android:text="▣&#10;Scan" />
+
+    <TextView
+        android:id="@+id/navRewards"
+        style="@style/EcoBottomNav"
+        android:text="♛&#10;Rewards" />
+
+    <TextView
+        android:id="@+id/navProfile"
+        style="@style/EcoBottomNav"
+        android:text="♙&#10;Profile" />
+
+</LinearLayout>

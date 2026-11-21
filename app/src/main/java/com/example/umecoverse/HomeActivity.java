@@ -32,6 +32,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        BottomNavHelper.setup(this);
 
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -54,27 +55,6 @@ public class HomeActivity extends AppCompatActivity {
         // College Battle
         findViewById(R.id.btnCollegeBattle).setOnClickListener(v ->
                 startActivity(new Intent(this, CollegeBattleActivity.class))
-        );
-
-        // Bottom Navigation
-        findViewById(R.id.navHome).setOnClickListener(v -> {
-            // Already on Home
-        });
-
-        findViewById(R.id.navRanks).setOnClickListener(v ->
-                startActivity(new Intent(this, CollegeBattleActivity.class))
-        );
-
-        findViewById(R.id.navScan).setOnClickListener(v ->
-                startActivity(new Intent(this, ScanActivity.class))
-        );
-
-        findViewById(R.id.navRewards).setOnClickListener(v ->
-                startActivity(new Intent(this, RewardsActivity.class))
-        );
-
-        findViewById(R.id.navProfile).setOnClickListener(v ->
-                startActivity(new Intent(this, ProfileActivity.class))
         );
 
         // Knowledge Hub
