@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- PAGE TITLE -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,51 +29,39 @@
             android:textSize="14sp"
             android:layout_marginBottom="18dp" />
 
-        <!-- MAP PROTOTYPE -->
+        <!-- INTERACTIVE OPENSTREETMAP -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
             android:background="@drawable/eco_card"
-            android:padding="20dp">
+            android:padding="8dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="🌳 UM COLLEGE BATTLE MAP"
-                android:textStyle="bold"
+                android:text="🌳 UM College Map"
                 android:textColor="#28572D"
+                android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_marginBottom="24dp" />
+                android:layout_marginBottom="12dp"
+                android:gravity="center" />
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/collegeMapView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="Interactive map of UM residential colleges" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="📍 KK12 — 4,200 EP"
-                android:textColor="#28572D"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginBottom="18dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="📍 KK1 — 3,650 EP"
+                android:text="📍 Tap a college marker to view its location"
                 android:textColor="#456B47"
-                android:textSize="16sp"
-                android:layout_marginBottom="18dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:textSize="12sp"
                 android:gravity="center"
-                android:text="📍 KK8 — 2,900 EP"
-                android:textColor="#456B47"
-                android:textSize="16sp" />
+                android:layout_marginTop="10dp" />
+
         </LinearLayout>
 
         <!-- MAP INFORMATION -->
@@ -115,6 +104,7 @@
                 android:textColor="#777777"
                 android:textSize="12sp"
                 android:layout_marginTop="14dp" />
+
         </LinearLayout>
 
     </LinearLayout>

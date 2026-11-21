@@ -1,8 +1,16 @@
+import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
 }
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        file.inputStream().use { load(it) }
+    }
+}
 
+val mapTilerApiKey = localProperties.getProperty("MAPTILER_API_KEY", "")
 android {
     namespace = "com.example.umecoverse"
     compileSdk {
@@ -17,6 +25,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField(
+            "String",
+            "MAPTILER_API_KEY",
+            "\"$mapTilerApiKey\""
+        )
+
     }
 
     buildTypes {
@@ -27,6 +41,10 @@ android {
             }
         }
     }
+    buildFeatures {
+        buildConfig = true
+    }
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -45,6 +63,9 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
     implementation(libs.material)
+
+    // OpenStreetMap
+    implementation("org.osmdroid:osmdroid-android:6.1.20")
 
     // TensorFlow Lite (for your waste classifier model)
     implementation("com.google.ai.edge.litert:litert:1.4.2")
